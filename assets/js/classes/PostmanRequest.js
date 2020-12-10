@@ -7,11 +7,12 @@ class PostmanRequest {
 
     toBean(item) {
         let { name } = item;
-        let { method, header, url } = item.request;
+        let { method, header, url, auth = null } = item.request;
         this.name = name;
         this.method = method;
         this.headers = header;
         this.url = url;
+        this.auth = auth;
         this.fileName = this.generateFeatureFileName(name);
     }
 
