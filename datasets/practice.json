@@ -9,7 +9,13 @@
 			"name": "GET users",
 			"request": {
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "Token",
+						"value": "test",
+						"type": "text"
+					}
+				],
 				"url": {
 					"raw": "https://reqres.in/api/users?page=2",
 					"protocol": "https",
