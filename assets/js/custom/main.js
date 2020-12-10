@@ -8,7 +8,8 @@ $(document).ready(() => {
         let content = null;
         await promise.then((pm) => content = pm).catch((err) => console.log(err));
         content.item.forEach((item, index) => {
-            let postman = new PostmanRequest(item);
+            let request = new PostmanRequest(item);
+            let script = new KarateBuilder(request);
         });
 
     });

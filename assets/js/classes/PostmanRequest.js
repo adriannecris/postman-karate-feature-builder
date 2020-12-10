@@ -2,7 +2,6 @@ class PostmanRequest {
 
     constructor(item) {
         this.toBean(item);
-        console.log(this);
 
     }
 
