@@ -9,7 +9,7 @@ function promiseReadJSONFile(file) {
                 postman = JSON.parse(fileContent);
                 resolve(postman);
             } catch (e) {
-                reject(e.message);
+                reject(e);
             }
         };
         reader.readAsText(file);
