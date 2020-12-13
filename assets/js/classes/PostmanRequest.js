@@ -20,6 +20,6 @@ class PostmanRequest {
     generateFeatureFileName(name) {
         let mutated = name;
         mutated = mutated.replaceAll(" ", "_");
-        return mutated.trim() + ".feature";
+        return mutated.trim();
     }
 }
